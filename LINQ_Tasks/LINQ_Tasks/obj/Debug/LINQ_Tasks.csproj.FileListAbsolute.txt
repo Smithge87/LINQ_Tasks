@@ -1,0 +1,6 @@
+C:\Users\Jack\Desktop\Projects\LINQ_Tasks\LINQ_Tasks\LINQ_Tasks\bin\Debug\LINQ_Tasks.exe.config
+C:\Users\Jack\Desktop\Projects\LINQ_Tasks\LINQ_Tasks\LINQ_Tasks\bin\Debug\LINQ_Tasks.exe
+C:\Users\Jack\Desktop\Projects\LINQ_Tasks\LINQ_Tasks\LINQ_Tasks\bin\Debug\LINQ_Tasks.pdb
+C:\Users\Jack\Desktop\Projects\LINQ_Tasks\LINQ_Tasks\LINQ_Tasks\obj\Debug\LINQ_Tasks.csprojResolveAssemblyReference.cache
+C:\Users\Jack\Desktop\Projects\LINQ_Tasks\LINQ_Tasks\LINQ_Tasks\obj\Debug\LINQ_Tasks.exe
+C:\Users\Jack\Desktop\Projects\LINQ_Tasks\LINQ_Tasks\LINQ_Tasks\obj\Debug\LINQ_Tasks.pdb
