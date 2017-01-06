@@ -29,16 +29,15 @@ namespace LINQ_Tasks
             grades.Add("90,20,30,40,50,60,70");
             double averages = functions.DropAndAverage(grades);
             Console.WriteLine(averages);
-            Console.ReadLine(); 
+            Console.ReadLine();
 
+            //3. Write a function that takes in a string of letters (e.g., "Llewellyn") and returns a
+            //alphabetically ordered string corresponding to the letter frequency(e.g., "E2L4N1W1Y1")
 
-
+            string name = "applebananaorange";
+            //functions.NumberName(name);
+            Console.WriteLine();
         }
     }
 }
-//target = orig.ConvertAll(x => new TargetType { SomeValue = x.SomeValue });
 
-//2. Write a function that calculates the class grade average after dropping the lowest grade for each student.That is:
-//Write a function that takes in a list of strings of grades (e.g., one string might be "90,100,82,89,55"), drops the lowest grade from each string, averages the rest of the grades from that string, then averages the averages.
-
-//3. Write a function that takes in a string of letters (e.g., "Llewellyn") and returns a alphabetically ordered string corresponding to the letter frequency(e.g., "E2L4N1W1Y1")

@@ -18,14 +18,21 @@ namespace LINQ_Tasks
             List<double> averages = new List<double>();
             foreach (string s in grades)
             {
-                List<string>cleanedGrades = s.Split(',').Select(y => y.Trim()).ToList();
-                List<int>sortedGrades = cleanedGrades.ConvertAll(x => Int32.Parse(x));
-                sortedGrades.Sort();
-                sortedGrades.RemoveAt(0);
-                averages.Add(sortedGrades.Average());
+                List<int>cleanedGrades = s.Split(',').Select(y => y.Trim()).ToList().ConvertAll(x => Int32.Parse(x));
+                cleanedGrades.Sort();
+                cleanedGrades.RemoveAt(0);
+                averages.Add(cleanedGrades.Average());
             }
             double average = Math.Round(averages.Average(), 2, MidpointRounding.AwayFromZero);
             return average;
         }
+        //public void NumberName(string fruits)
+        //{
+        //    List<string> letters = fruits.ToCharArray().Select(x => x.ToString()).ToList();
+        //    letters.Sort();
+        //    List<>
+        //    letters.ForEach(x => letters.Count(y => x.Contains(y)));
+        //}
     }
 }
+//count = mylist.Count(s => myString.Contains(s));
