@@ -35,8 +35,9 @@ namespace LINQ_Tasks
             //alphabetically ordered string corresponding to the letter frequency(e.g., "E2L4N1W1Y1")
 
             string name = "applebananaorange";
-            //functions.NumberName(name);
-            Console.WriteLine();
+            string numbered = functions.NumberName(name);
+            Console.WriteLine(numbered);
+            Console.ReadLine();
         }
     }
 }
