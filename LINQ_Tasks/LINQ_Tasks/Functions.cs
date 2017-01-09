@@ -29,29 +29,15 @@ namespace LINQ_Tasks
         public string NumberName(string fruits)
         {
             List<string> countedLetters = new List<string>();
-            List<int> counts = new List<int>();
-            List<string> letters = fruits.ToCharArray().Select(x => x.ToString()).ToList();
-            letters.Sort();
-            List<string> cleanedLetters = letters.Distinct().ToList();
-            var groups = letters.GroupBy(z => z);
-            foreach (var group in groups)
+            List<string> letters = fruits.ToCharArray().Select(x => x.ToString().ToLower()).ToList();
+            var grouped = letters.GroupBy(z => z);
+            foreach (var group in grouped)
             {
                 countedLetters.Add(group.Key);
                 countedLetters.Add(group.Count().ToString());
             }
             string result = String.Join("",countedLetters);
             return result;
-
-
-            //foreach (string s in letters)
-            //{
-            //    int count = letters.Count(x => s == x);
-            //    letters.RemoveRange(0, count-1);
-            //    counts.Add(count);
-            //}
-            //var countedLetters = counts.Zip(letters, (first,second) => first+second);
         }
     }
 }
-//count = mylist.Count(s => myString.Contains(s));
-//var count = test.Count(x => x == '&');
